@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/images"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Id Pembeli :" />
+
+            <EditText
+                android:id="@+id/edtidpembeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="72dp"
+                android:layout_marginTop="5dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Nama Makanan :" />
+
+            <EditText
+                android:id="@+id/edtnamamakanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="38dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Jumlah Beli :" />
+
+            <EditText
+                android:id="@+id/edtjumlahbeli"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="64dp"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Harga :Rp" />
+
+            <EditText
+                android:id="@+id/edtharga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="84dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="5dp"
+                android:text="Uang Bayar :Rp" />
+
+            <EditText
+                android:id="@+id/edtuangbayar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginLeft="48dp"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnproses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="Proses" />
+
+        <TextView
+            android:id="@+id/txtnamamakanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Nama Makanan" />
+
+        <TextView
+            android:id="@+id/txttotalbelanja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Total Belanja" />
+
+        <TextView
+            android:id="@+id/txtdiskon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Diskon" />
+
+        <TextView
+            android:id="@+id/txttotalakhir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Total Akhir" />
+
+        <TextView
+            android:id="@+id/txtuangkembali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Uang Kembali" />
+
+        <TextView
+            android:id="@+id/txtbonus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Bonus" />
+
+        <TextView
+            android:id="@+id/txtketerangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="5dp"
+            android:text="Keterangan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnreset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Data" />
+
+            <Button
+                android:id="@+id/btnkeluar"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@android:color/holo_red_dark"
+                android:text="Exit" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
